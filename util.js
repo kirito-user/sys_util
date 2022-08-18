@@ -1,3 +1,5 @@
+const uuid = require('node-uuid')
+
 module.exports = {
     /**
      * 判断是否为空（简化版）
@@ -29,5 +31,28 @@ module.exports = {
         } else {
             return false
         }
+    },
+
+
+    /**
+     * 正则匹配
+     * @param {String} param 
+     * @param {*} reg 
+     * @returns 
+     */
+    regMatch(param, reg) {
+        if(this.isEmptyV2(param)) {
+            return false
+        }
+        return param.test(reg)
+    },
+
+
+    getuuidV1(){
+        return uuid.v1()
+    },
+
+    getuuidV2(){
+        return uuid.v4()
     }
 }

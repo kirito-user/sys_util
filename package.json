@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kirito-user/sys_util/issues"
   },
-  "homepage": "https://github.com/kirito-user/sys_util#readme"
+  "homepage": "https://github.com/kirito-user/sys_util#readme",
+  "dependencies": {
+    "node-uuid": "^1.4.8"
+  }
 }
